@@ -1,0 +1,37 @@
+.sidenav-container {
+    background: var(--white);
+    padding: 0 !important;
+    padding-top: 50px !important;
+}
+
+.sideNav {
+    margin: 0;
+}
+
+.sideNav li {
+    list-style: none;
+}
+
+.sideNav li a {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+    width: 100;
+    align-items: center;
+}
+
+.sideNav li a span {
+    display: inline-block;
+    padding-top: 2px;
+}
+
+.sideNav a {
+    display: block;
+    padding: 5px 15px;
+    color: var(--black);
+}
+
+.sideNav a.active {
+    background-color: var(--blue);
+    color: var(--white);
+}

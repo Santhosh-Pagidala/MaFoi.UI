@@ -1,0 +1,272 @@
+:root {
+  --blue: #2965ad;
+  --blueLight: #deeff9;
+  --blueLight1: #3c93d8;
+  --greyLite: #efeeee;
+  --grey: #cdd0d3;
+  --greyDark: #5b5657;
+  --yellow: #ffc000;
+  --red: #ff0000;
+  --green: #0d9500;
+  --white: #ffffff;
+  --black: #322c2d;
+}
+
+a,
+link {
+  text-decoration: none !important;
+}
+
+body {
+  background-color: #f4f9fd !important;
+}
+
+
+/* overwrite css */
+.text-appprimary {
+  color: var(--blue) !important;
+}
+
+.btn-check:checked+.btn {
+  background-color: var(--blue) !important;
+}
+
+
+.underline {
+  text-decoration: underline;
+}
+
+.userNameL {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background: purple;
+}
+
+.pageHeading {
+  background-color: var(--blueLight);
+}
+
+.pageHeading h4 {
+  color: var(--blue);
+}
+
+.breadcrumb a {
+  color: var(--blue);
+}
+
+
+/* Dashboard-Tabs Start */
+.nav-tabs.DashboardTabs {
+  border-bottom: 3px solid var(--blue);
+}
+
+.nav-tabs.DashboardTabs .nav-link {
+  border-radius: 25px 25px 0 0;
+  background-color: var(--grey);
+  color: var(--black);
+  padding: 10px 35px;
+  font-weight: 600;
+}
+
+.nav-tabs.DashboardTabs .nav-link.active {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+/* Dashboard-cards count */
+
+.cardCount {
+  border-left: 5px solid transparent;
+  height: 90px;
+}
+
+.cardCount a {
+  width: 25px;
+  height: 25px;
+  background-color: var(--blue);
+  display: inline-block;
+  text-align: center;
+  color: var(--white);
+}
+
+
+.cardCount.grey {
+  border-left: 5px solid var(--greyDark);
+}
+
+.cardCount.grey a {
+  background-color: var(--greyDark);
+}
+
+.cardCount.red {
+  border-left: 5px solid var(--red);
+}
+
+.cardCount.red a {
+  background-color: var(--red);
+}
+
+.cardCount.yellow {
+  border-left: 5px solid var(--yellow);
+}
+
+.cardCount.yellow a {
+  background-color: var(--yellow);
+}
+
+.cardCount.green {
+  border-left: 5px solid var(--green);
+}
+
+.cardCount.green a {
+  background-color: var(--green);
+}
+
+
+.vendorPerformance-cards .cardCount {
+  font-size: .85rem;
+}
+
+.vendorPerformance-cards .cardCount h3 {
+  font-size: 1.2rem;
+}
+
+.vendorPerformance-cards .cardCount a {
+  width: 15px;
+  height: 15px;
+}
+
+
+.nav-tabs-rounded {
+  background-color: var(--greyLite);
+  color: var(--black);
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.nav-tabs-rounded .nav-item .nav-link {
+  background-color: transparent;
+  color: var(--black);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.nav-tabs-rounded .nav-item .nav-link.active {
+  background-color: var(--blueLight1);
+  color: var(--white);
+}
+
+
+.cardList {
+  border-top: 5px solid transparent;
+  height: 90px;
+}
+
+.cardList li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 0;
+}
+
+.cardList.red {
+  border-top: 5px solid var(--red);
+}
+
+.cardList.red span {
+  color: var(--red);
+}
+
+.cardList.yellow span {
+  color: var(--yellow);
+}
+
+
+/* Forms styling */
+
+.form-select,
+.form-control {
+  border: 1px solid var(--black) !important;
+}
+
+
+/* progress bar prime override  */
+
+
+.progress {
+  background-color: #cdd7dc !important;
+}
+
+.progress .progress-bar {
+  background-color: #21a7e6 !important;
+}
+
+
+/*vendor dashboard Newupdates */
+
+.bannerSlider .carousel-control-next,
+.bannerSlider .carousel-control-prev {
+  display: none;
+}
+
+.bannerSlider img {
+  height: 100vh
+}
+
+.loginSection {
+  background-color: var(--white);
+  position: relative;
+  z-index: 999;
+}
+
+.loginSection:before {
+  border-left: 16px solid var(--blue);
+  background-color: var(--white);
+  position: absolute;
+  z-index: -1;
+  left: -20%;
+  top: -10%;
+  bottom: -10%;
+  right: 0;
+  width: 40%;
+  content: "";
+  transform: rotate(10deg) skewY(-10deg);
+}
+
+.fixed_header {
+  width: 400px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.fixed_header tbody {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.fixed_header thead tr,
+.fixed_header tbody tr {
+  display: flex;
+}
+
+.error [class*="-control"] {
+  border-color: var(--bs-danger);
+}
+
+.yellow path {
+  fill: var(--yellow);
+}
+
+.grey path {
+  fill: var(--grey);
+}
+
+.green path {
+  fill: var(--green);
+}
+
+.red path {
+  fill: var(--red);
+}
